@@ -9,7 +9,9 @@
       </p>
       <h4>{{drinkDescription}}</h4>
       <h5>Ingredients:</h5>
-      <p>{{drinkIngredients}}</p>
+      {{#each ingredients}}
+        <p>{{name}}</p>
+      {{/each}}
       <h4>Instructions:</h4>
       <p>{{drinkInstructions}}</p>
     </div>
